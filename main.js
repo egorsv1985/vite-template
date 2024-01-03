@@ -1,3 +1,2 @@
-import imageUrl from "./src/assets/img/javascript.svg?raw";
-console.log(imageUrl);
-document.getElementById("img").src = imageUrl;
+const modules = import.meta.glob("./src/10/*.js", { as: "raw", eager: true });
+console.log(modules);
