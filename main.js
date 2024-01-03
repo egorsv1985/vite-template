@@ -1,4 +1,3 @@
-import "./src/02.js";
-import styles from "./src/assets/06.module.scss";
-console.log(styles);
-document.body.className = styles.wrapper;
+import imageUrl from "./src/assets/img/javascript.svg?raw";
+console.log(imageUrl);
+document.getElementById("img").src = imageUrl;
