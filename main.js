@@ -1,7 +1,8 @@
 import "./src/02.js";
-import styles from "./src/assets/03.css?inline";
-console.log(styles);
-const styleE1 = document.createElement("style");
-styleE1.innerHTML = styles;
+import "./src/assets/03.css";
+import { heading as headingFontSize } from "./src/assets/04a.module.css";
+import { heading as headingColor } from "./src/assets/04b.module.css";
 
-document.querySelector("head").append(styleE1);
+document.querySelector(
+  ".heading"
+).className = `${headingFontSize} ${headingColor}`;
