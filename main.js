@@ -1,8 +1,4 @@
 import "./src/02.js";
-import "./src/assets/03.css";
-import { heading as headingFontSize } from "./src/assets/04a.module.css";
-import { heading as headingColor } from "./src/assets/04b.module.css";
-
-document.querySelector(
-  ".heading"
-).className = `${headingFontSize} ${headingColor}`;
+import styles from "./src/assets/06.module.scss";
+console.log(styles);
+document.body.className = styles.wrapper;
