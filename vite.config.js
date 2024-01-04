@@ -1,5 +1,7 @@
 import Inspect from "vite-plugin-inspect";
 import checker from "vite-plugin-checker";
+import path from "path";
+
 export default {
   esbuild: {
     jsxFactory: "create",
@@ -14,4 +16,9 @@ export default {
       },
     }),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, ".src/assets"),
+    },
+  },
 };

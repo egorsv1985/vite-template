@@ -1,2 +1,3 @@
-import { template } from "/src/12.jsx";
-document.querySelector("#app").appendChild(template);
+import "./src/assets/03.css";
+import imageUrl from "./src/assets/img/javascript.svg";
+document.querySelector("#img").src = imageUrl;
