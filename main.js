@@ -1,2 +1,2 @@
-const modules = import.meta.glob("./src/10/*.js", { as: "raw", eager: true });
-console.log(modules);
+import { template } from "/src/12.jsx";
+document.querySelector("#app").appendChild(template);
